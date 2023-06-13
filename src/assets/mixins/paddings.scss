@@ -1,0 +1,32 @@
+@mixin padding {
+    padding-top: 2.5rem /* 40px */;
+    padding-bottom: 2.5rem /* 40px */;
+    padding-left: 1.5rem /* 24px */;
+    padding-right: 1.5rem /* 24px */;
+
+    @media (min-width: 640px) {
+        padding: 4rem /* 64px */;
+    }
+}
+
+@mixin paddingX {
+    padding-left: 1.5rem /* 24px */;
+    padding-right: 1.5rem /* 24px */;
+
+    @media (min-width: 640px) {
+        padding-left: 4rem /* 64px */;
+        padding-right: 4rem /* 64px */;
+    }
+}
+
+@mixin paddingY {
+    padding-top: 1.5rem /* 24px */;
+    padding-bottom: 1.5rem /* 24px */;
+
+    @media (min-width: 640px) {
+        .sm\:py-16 {
+            padding-top: 4rem /* 64px */;
+            padding-bottom: 4rem /* 64px */;
+        }
+    }
+}

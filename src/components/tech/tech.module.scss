@@ -1,0 +1,36 @@
+.techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2.5rem /* 40px */;
+
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: fit-content;
+        gap: 6px;
+    }
+    p.more {
+        font-size: 16px;
+        font-weight: 300;
+        color: #aaa6c3;
+    }
+    span {
+        min-width: 60px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .2s ease-in;
+
+        &:hover {
+            font-weight: 900;
+        }
+    }
+}   
+
+.ball_wrapp {
+    width: 7rem /* 112px */;
+    height: 7rem /* 112px */;
+}

@@ -1,0 +1,108 @@
+.contacts {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    
+    @media (min-width:1280px) {
+        flex-direction: row;
+    }
+
+    .col {
+        max-width: 100%;
+        width: 100%;
+        @media (min-width:1280px) {
+            max-width: 400px;
+        }
+    }
+
+    .earthWrapper {
+        height: 350px;
+        width: 100%;
+        @media (min-width: 1280px) {
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            height: 550px;
+        }
+    }
+
+    form.form {
+        margin-top: 3rem /* 48px */;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem /* 32px */;
+
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            padding: 1rem 1.5rem;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            border-style: none;
+            border-radius: 0.5rem /* 8px */;
+            font-weight: 500;
+            color: #fff;
+            border: 2px solid #dfd9ff;
+            background-color: transparent;
+
+            &::placeholder {
+                color: #dfd9ff;
+            }
+        }
+
+        textarea {
+            resize: none;
+            max-width: 100%; 
+            min-width: 200px;
+        }
+
+        button {
+            padding: 0.75rem 2rem;
+            border-radius: 0.75rem/* 12px */;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            border: 2px solid #915eff;
+            width: 100%;
+            background-color: #915eff;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all .4s ease-in;
+
+            &:hover {
+                background-color: transparent;
+                color: #915eff;
+                box-shadow: 0px 35px 120px -15px #211e35;
+            }
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: fit-content;
+            gap: 6px;
+        }
+        p.more {
+            font-size: 16px;
+            font-weight: 300;
+            color: #aaa6c3;
+        }
+        span {
+            min-width: 60px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s ease-in;
+    
+            &:hover {
+                font-weight: 900;
+            }
+        }
+    }
+}   

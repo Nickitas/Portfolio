@@ -1,0 +1,80 @@
+@import '../../assets/mixins/responsive_font.scss';
+@import '../../assets/mixins/paddings.scss';
+
+.feedbacksWrapper {
+    margin-top: 3rem /* 48px */;
+    border-radius: 20px;
+}
+
+.cardsWrapper {
+    margin-top: 5rem /* 80px */;
+    padding-bottom: 3.5rem /* 56px */;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem /* 28px */;
+}
+
+
+.card {
+    padding: 2.5rem /* 40px */;
+    width: 100%;
+    border-radius: 1.5rem /* 24px */;
+    background-color: rgb(9 3 37 / 1);
+    transition: all .4s ease-in;
+
+    &:hover {
+        box-shadow: 0px 35px 120px -15px #211e35;
+    }
+
+    p.quot {
+        @include responsive_font(48, 32);
+        font-weight: 900;
+        color: #fff;
+    }
+
+    p.review {
+        @include responsive_font(16, 12);
+        font-weight: 100;
+        letter-spacing: 0.05em;
+        color: #fff;
+    }
+
+    .personWrapper {
+        margin-top: 1.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.25rem /* 4px */;
+        
+        img {
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 9999px;
+            object-fit: cover;
+        }
+    }
+
+    .person {
+        display: flex;
+        flex: 1 1 0%;
+        flex-direction: column;
+
+        p.name {
+            @include responsive_font(22, 18);
+            font-weight: 800;
+            color: #fff;
+        }
+
+        p.designation {
+            margin-top: 0.25rem /* 4px */;
+            font-size: 12px;
+            color: #aaa6c3;
+        }
+
+        span.link {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+}
